@@ -1,5 +1,5 @@
 @require "github.com/jkroso/AnsiColor.jl@update-syntax" colorize
-@require "github.com/coiljl/server@8c07bfe" Request verb
+@require "github.com/coiljl/server" Request verb
 
 logger(next) = req -> logger(next, req)
 logger(next, req::Request) = begin
